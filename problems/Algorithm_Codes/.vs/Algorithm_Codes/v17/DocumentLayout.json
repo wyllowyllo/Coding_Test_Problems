@@ -3,8 +3,11 @@
   "WorkspaceRootPath": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Remove_duplicated value.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Remove_duplicated value.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Implementation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Scripts\\Implementation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.40.33807\\INCLUDE\\ALGORITHM||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +17,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "algorithm",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\algorithm",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\algorithm",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\algorithm",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\algorithm",
+              "ViewState": "AQIAANwfAAAAAAAAAAAAAOgfAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-07T12:11:36.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Remove_duplicated value.cpp",
-              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Remove_duplicated value.cpp",
-              "RelativeDocumentMoniker": "Algorithm_Codes\\Remove_duplicated value.cpp",
-              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Remove_duplicated value.cpp",
-              "RelativeToolTip": "Algorithm_Codes\\Remove_duplicated value.cpp",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABYAAAABAAAA",
+              "Title": "Implementation.cpp",
+              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Implementation.cpp",
+              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\Implementation.cpp",
+              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Implementation.cpp",
+              "RelativeToolTip": "Algorithm_Codes\\Scripts\\Implementation.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-04T04:12:56.216Z",
+              "WhenOpened": "2024-09-07T11:10:59.039Z",
               "EditorCaption": ""
             }
           ]
