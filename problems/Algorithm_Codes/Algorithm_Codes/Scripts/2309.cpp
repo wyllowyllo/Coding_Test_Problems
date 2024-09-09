@@ -53,6 +53,37 @@ void Solve(pair<int,int>* ret, int sum) {
 	
 }
 
+void Swap(int a_Idx, int b_Idx) {
+	int temp = input[a_Idx];
+	input[a_Idx] = input[b_Idx];
+	input[b_Idx] = temp;
+}
+
+vector<int> result;
+void Make_Permutation(int n, int r, int depth) {
+	if (depth == 7) { 
+		int sum = 0;
+		for (int i = 0; i < 7; i++) {
+			sum += input[i];
+		}
+		if (sum == 100 && result.size() == 0) {
+			for (int i = 0; i < 7; i++)
+				result.push_back(input[i]);
+			sort(result.begin(), result.end());
+			
+		}
+		return;
+	}
+
+	for (int i = depth; i < n; i++) {
+		Swap(depth, i);
+		Make_Permutation(n,r,depth+1);
+		Swap(i, depth);
+	}
+}
+
+
+
 
 int main() {
 	
@@ -100,27 +131,34 @@ int main() {
 	//----------------------------------------------------------------------------------------
 
 	//---------------------------Solution using the concept "nCr == nCn-r" -------------------
-	int sum = 0;
-	for (int value : input)
-		sum += value;
-	
-	pair<int, int> ret;
-	vector<int> result;
+	//int sum = 0;
+	//for (int value : input)
+	//	sum += value;
+	//
+	//pair<int, int> ret;
+	//vector<int> result;
 
-	//조합에 포함되면 조건을 만족하지 못하는 원소들 찾기
-	Solve(&ret,sum);
+	////조합에 포함되면 조건을 만족하지 못하는 원소들 찾기
+	//Solve(&ret,sum);
 
-	//그 원소 뺀 조합 만들기
-	for (int i = 0; i < 9; i++) {
-		if (i == ret.first || i == ret.second) {
-			continue;
-		}
-		result.push_back(input[i]);
-	}
+	////그 원소 뺀 조합 만들기
+	//for (int i = 0; i < 9; i++) {
+	//	if (i == ret.first || i == ret.second) {
+	//		continue;
+	//	}
+	//	result.push_back(input[i]);
+	//}
 
-	//정렬 후 출력
-	sort(result.begin(), result.end());
-	for (int i : result) cout << i << " ";
+	////정렬 후 출력
+	//sort(result.begin(), result.end());
+	//for (int i : result) cout << i << " ";
+	//----------------------------------------------------------------------------------------
+
+	//---------------------------Solution using permutation implemented by recursion" -------------------
+
+	Make_Permutation(9, 7,0);
+	for (int i : result)
+		cout << i << '\n';
 
 	return 0;
 }
