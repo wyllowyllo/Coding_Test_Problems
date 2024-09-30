@@ -2,9 +2,12 @@
 using namespace std;
 
 
+
+
+//-------------------------------------------------My solution ---------------------------------------------//
+/*
 int n, c;
 int num;
-
 map<int, int> frequencyMap;//숫자-빈도 map
 map<int, int>orderMap;//숫자-등장순서 map
 
@@ -43,5 +46,41 @@ int main() {
 
 	
 	
+
+}
+*/
+//---------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------Solution 1 -----------------------------------------------------
+
+int n, c, a[1004];
+vector<pair<int, int>> v;
+map<int, int> mp, mp_first; //각각 숫자-빈도, 숫자-등장순서
+
+bool cmp(pair<int, int>a, pair<int, int>b) {
+	if (a.first == b.first) return mp_first[a.second] < mp_first[b.second]; //빈도수 같으면 먼저나온 수를 기준으로 정렬
+	return a.first > b.first; //빈도수 많은순 정렬
+}
+int main() {
+	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+	cin >> n >> c;
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+		mp[a[i]]++;
+		if (mp_first[a[i]] == 0) mp_first[a[i]] = i + 1;
+	}
+
+	for (auto i : mp) {
+		v.push_back({ i.second, i.first }); //빈도수-숫자 쌍으로 push(빈도순으로 vector정렬위해)
+	}
+
+	sort(v.begin(), v.end(), cmp);
+
+	for (auto i : v) {
+		for (int j = 0; j < i.first; j++) {
+			cout << i.second << " ";
+		}
+	}
 
 }
