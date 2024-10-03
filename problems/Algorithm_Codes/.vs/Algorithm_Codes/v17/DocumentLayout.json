@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\4949.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Scripts\\4949.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Split_String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Algorithm_Codes\\Scripts\\Split_String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1436.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Scripts\\1436.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Split_String.cpp",
-              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Split_String.cpp",
-              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\Split_String.cpp",
-              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\Split_String.cpp",
-              "RelativeToolTip": "Algorithm_Codes\\Scripts\\Split_String.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-03T12:57:06.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "4949.cpp",
-              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\4949.cpp",
-              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\4949.cpp",
-              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\4949.cpp",
-              "RelativeToolTip": "Algorithm_Codes\\Scripts\\4949.cpp",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Title": "1436.cpp",
+              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1436.cpp",
+              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\1436.cpp",
+              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1436.cpp",
+              "RelativeToolTip": "Algorithm_Codes\\Scripts\\1436.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-03T12:55:06.896Z",
+              "WhenOpened": "2024-10-03T14:58:41.856Z",
               "EditorCaption": ""
             }
           ]
