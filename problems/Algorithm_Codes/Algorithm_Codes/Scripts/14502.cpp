@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//---------------------------------My Solution------------------------------------------------
+/*
 int inputMap[8][8];
 int copyMap[8][8];
 int visited[8][8];
@@ -80,4 +82,59 @@ int main() {
 		
 		cout << max_size << "\n";
 
+}*/
+//-------------------------------------------------------------------------------------
+
+//-------------------------------Solution 1-----------------------------------------
+int a[10][10], visited[10][10], n, m, ret;
+vector<pair<int, int>> virusList, wallList;
+const int dy[] = { -1,0,1,0 };
+const int dx[] = { 0,1,0,-1 };
+void dfs(int y, int x) {
+	for (int i = 0; i < 4; i++) {
+		int ny = y + dy[i];
+		int nx = x + dx[i];
+		if (ny < 0 || ny >= n || nx < 0 || nx >= m || visited[ny][nx] || a[ny][nx]==1) continue;
+		visited[ny][nx] = 1;
+		dfs(ny, nx);
+	}
+	return;
+}
+int solve() {
+	fill(&visited[0][0], &visited[0][0] + 10 * 10, 0);
+	for (pair<int, int> b : virusList) {
+		visited[b.first][b.second] = 1;
+		dfs(b.first, b.second);
+	}
+}
+int main() {
+	cin >> n >> m;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cin >> a[i][j];
+
+			//바이러스, 벽 위치 좌표 각각 기록
+			if (a[i][j]==2) virusList.push_back({ i,j }); 
+			if (a[i][j] == 1) wallList.push_back({ i,j });
+		}
+	}
+
+	//벽 설치 가능한 위치 중 3개 뽑음(조합) -> 해당 위치에 벽 설치
+	for (int i = 0; i < wallList.size(); i++) {
+		for (int j = 0; j < i; j++) {
+			for (int k = 0; k < j; k++) {
+				a[wallList[i].first][wallList[i].second] = 1;
+				a[wallList[j].first][wallList[j].second] = 1;
+				a[wallList[k].first][wallList[k].second] = 1;
+				ret = max(ret, solve());
+
+				//다시 원상복구
+				a[wallList[i].first][wallList[i].second] = 0;
+				a[wallList[j].first][wallList[j].second] = 0;
+				a[wallList[k].first][wallList[k].second] = 0;
+			}
+		}
+	}
+
+	cout << ret << "\n";
 }
