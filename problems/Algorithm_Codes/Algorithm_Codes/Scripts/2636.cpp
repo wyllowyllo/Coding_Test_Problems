@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int m[100][100];
+//----------------------------------My Solution ----------------------------------//
+/*int m[100][100];
 int visited[100][100];
 pair<int, int> dir[4] = { {-1,0},{0,1} ,{1,0} ,{0,-1} };
 int w, h;
@@ -82,4 +83,64 @@ int main() {
 
 	cout << t << "\n";
 	cout << remainCheese << "\n";
+}*/
+
+//------------------------------------------------------------------------------------
+
+//----------------------------Solution 1----------------------------------------------
+/*내 코드의 경우 맵의 0인 위치 전부들 대상으로  해당 지점에서 시작해서 connected graph 생성
+ 만약 그 connectedgraph가 외곽과 맞닿아 있는 경우에, 그 그래프의 노드 전부들 다시 탐색해서
+ 그 노드 상하좌우로 치즈가 있을경우 그 치즈를 지우는 식으로 함.
+ 그러나 이 코드에서는 애초에 최외곽지점 하나에서 dfs 시작하므로 connected graph를 찾는 dfs도 한번만 수행 -> 훨씬 효율적!*/
+int a[104][104], visited[104][104];
+int dy[] = { -1,0,1,0 }, dx[] = { 0,1,0,-1 };
+int n, m, cnt, cnt2;
+vector <pair<int, int>>v;
+
+void go(int y, int x) {
+	visited[y][x] = 1;
+
+	//탐색 중 치즈 만났다면 -> 공기에 접촉된 치즈이므로 지워야 함 -> v에 추가
+	if (a[y][x] == 1) {
+		v.push_back({ y,x });
+		return;
+	}
+	for (int i = 0; i < 4; i++) {
+		int ny = y + dy[i];
+		int nx = x + dx[i];
+		if (ny < 0 || ny >= n || nx < 0 || nx >= m || visited[ny][nx])continue;
+		go(ny, nx);
+	}
 }
+int main() {
+	cin >> n >> m;
+	for(int i=0;i<n;i++)
+		for (int j = 0; j < m; j++)
+			cin >> a[i][j];
+
+	while (true) {
+		fill(&visited[0][0], &visited[0][0] + 104 * 104, 0);
+		v.clear();
+
+		go(0, 0);
+		cnt2 = v.size(); //남아있는 치즈개수
+		for (pair<int, int> b : v) {
+			a[b.first][b.second] = 0; //치즈 녹이기
+		}
+
+		bool flag = 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				if (a[i][j] != 0) flag = 1;
+			}
+		}
+		cnt++;
+		if (!flag) break; //전부 다 0이면 탈출
+	}
+
+	cout << cnt << '\n' << cnt2 << '\n';
+
+}
+
+
+
