@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Unique.cpp">
+    <ClCompile Include="Scripts\1325_review.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
