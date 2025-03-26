@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1987.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Scripts\\1987.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1189.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21AF49DF-9675-4716-8141-2079B123BA69}|Algorithm_Codes\\Algorithm_Codes.vcxproj|solutionrelative:Algorithm_Codes\\Scripts\\1189.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "1987.cpp",
-              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1987.cpp",
-              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\1987.cpp",
-              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1987.cpp",
-              "RelativeToolTip": "Algorithm_Codes\\Scripts\\1987.cpp",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Title": "1189.cpp",
+              "DocumentMoniker": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1189.cpp",
+              "RelativeDocumentMoniker": "Algorithm_Codes\\Scripts\\1189.cpp",
+              "ToolTip": "C:\\Harbor\\Coding_Test_Problems\\problems\\Algorithm_Codes\\Algorithm_Codes\\Scripts\\1189.cpp",
+              "RelativeToolTip": "Algorithm_Codes\\Scripts\\1189.cpp",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-25T14:55:39.278Z",
+              "WhenOpened": "2025-03-26T15:16:03.978Z",
               "EditorCaption": ""
             }
           ]
