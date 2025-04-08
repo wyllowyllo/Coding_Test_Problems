@@ -95,11 +95,80 @@ void Sol_1() {
 
 #pragma endregion
 
+#pragma region MySol_2
+
+//비트마스킹 활용하여 풀어보기
+
+int b[21][21];
+string s;
+
+void go_2(int visited, int y, int x, int cnt) {
+
+	if (visited & (1 << b[y][x] - 'A')) {
+		ret = max(ret, cnt);
+		return;
+	}
+
+	visited |= (1 << b[y][x] - 'A');
+	cnt++;
+
+	for (int i = 0; i < 4; i++) {
+		int ny = y + dy[i];
+		int nx = x + dx[i];
+
+
+		if (ny < 0 || ny >= r || nx < 0 || nx >= c) continue;
+		
+
+		go_2(visited, ny, nx,cnt);
+	}
+
+}
+void MySol_2() {
+	cin >> r >> c;
+
+	for (int i = 0; i < r; i++) {
+		cin >> s;
+		for (int j = 0; j < c; j++)
+			b[i][j] = s[j];
+	}
+
+
+	go_2(0,0,0,0);
+	cout << ret << "\n";
+}
+#pragma endregion
+
+#pragma region Sol_2
+
+void go_3(int y, int x, int num, int cnt) {
+	ret = max(ret, cnt);
+
+	for (int i = 0; i < 4; i++) {
+		int ny = y + dy[i]; int nx = x + dx[i];
+		if (ny < 0 || ny >= r || nx < 0 || nx >= c) continue;
+		int _next = (1 << (int)(a[ny][nx] - 'A'));
+		if ((num & _next) == 0) go_3(ny, nx, num | _next, cnt + 1);
+	}
+
+}
+void Sol_2() {
+	cin >> r >> c;
+	for (int i = 0; i < r; i++) {
+		for (int j = 0; j < c; j++) {
+			cin >> a[i][j];
+		}
+	}
+
+	go_3(0, 0, 1 << (int)a[0][0] - 'A', 1);
+}
+
+#pragma endregion
 
 
 
 
 int main() {
 	
-
+	
 }
