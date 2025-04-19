@@ -1,2 +1,0 @@
-﻿9375_review.obj : error LNK2001: 확인할 수 없는 외부 기호 "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > * type" (?type@@3PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A)
-C:\Harbor\Coding_Test_Problems\problems\Algorithm_Codes\x64\Release\Algorithm_Codes.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
