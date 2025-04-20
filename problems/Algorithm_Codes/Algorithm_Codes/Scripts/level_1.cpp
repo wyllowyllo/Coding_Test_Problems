@@ -1,31 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n;
-int m;
+typedef long long int lli;
 
-int cards[101];
-int ret = -1;
+
+lli a, b;
+
+
+
+lli gcd(lli i, lli j) {
+	if (i == 0) return j;
+
+	return gcd(j % i, i);
+}
+
+lli lcm(lli i, lli j) {
+	return (i * j) / gcd(i, j);
+}
 int main() {
 	
-	cin >> n >> m;
+	ios::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
 
-	for (int i = 0; i < n; i++) {
-		cin>>cards[i];
-	}
-		
-
-	//n개 카드 중 3개 선택
-	for (int i = 0; i < n; i++) {
-		for (int j = i + 1; j < n; j++) {
-			for (int k = j + 1; k < n; k++) {
-				int sum = 0;
-				sum = cards[i] + cards[j] + cards[k];
-				if (sum <=m) ret = max(ret, sum);
-			}
-		}
-	}
-
-	cout << ret << "\n";
-
+	cin >> a >> b;
+	cout << lcm(a, b) << "\n";
+	
 }
