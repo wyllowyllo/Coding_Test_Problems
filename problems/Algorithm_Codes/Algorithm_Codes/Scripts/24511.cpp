@@ -15,13 +15,13 @@ int main() {
 
 	ios::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
-	
+
 	cin >> n;
 
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
-		
+
 	for (int i = 0; i < n; i++) {
 		cin >> temp;
 		if (a[i] == 0) dq.push_front(temp);
@@ -33,7 +33,7 @@ int main() {
 		for (int i = 0; i < m; i++) {
 			cin >> temp;
 			cout << temp << " ";
-			
+
 
 		}
 	}
@@ -47,10 +47,10 @@ int main() {
 		}
 	}
 
-	
 
-	
-		
 
-	
+
+
+
+
 }
