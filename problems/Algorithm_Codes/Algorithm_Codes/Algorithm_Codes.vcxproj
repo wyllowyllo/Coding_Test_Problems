@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Scripts\15684_review.cpp" />
+    <ClCompile Include="Scripts\14939.cpp" />
+    <ClCompile Include="Scripts\3015.cpp" />
+    <ClCompile Include="Scripts\3015_review.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
