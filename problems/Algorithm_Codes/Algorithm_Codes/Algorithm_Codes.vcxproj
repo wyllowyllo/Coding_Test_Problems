@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scripts\10775.cpp" />
+    <ClCompile Include="Scripts\14627.cpp" />
     <ClCompile Include="Scripts\14939.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
