@@ -44,6 +44,8 @@ namespace Sol {
 	int n, k, a[10001], temp, INF = 1e9;
 
 	void sol() {
+		ios::sync_with_stdio(false); cin.tie(NULL);
+
 		cin >> n >> k;
 		fill(a, a + 10001, INF);
 		a[0] = 0;
@@ -62,10 +64,14 @@ namespace Sol {
 		//만약 문제가 n가지 종류의 동전을 1개씩만 쓸 수 있는 문제라면, 오른쪽부터 dp!
 		//왼쪽부터 진행할 때와 달리, 오른쪽에서부터 dp하면 누적이 안됨->따라서 1원,2원,3원 이라는 세 종류의 동전이 있다고 하면 각 동전 자체로는 누적이 안되므로, 1개씩만 쓰는 경우가 됨!
 		/*
-		for (int j = k; j >= temp; j--) {
-				a[j] = min(a[j], a[j - temp] + 1); //ex) j가 3원이고, temp가 2원이라고 하면 j(3원)를 만들 수 있는 경우의 수는 j-temp원(1원)에서 temp(2원)를 추가하는 경우의 수이다.
-			}
+		for (int i = 0; i < n; i++) {
+			cin >> temp;
+
+			for (int j = k; j >= temp; j--) {
+					a[j] = min(a[j], a[j - temp] + 1); 
+				}
 		
+		}
 		*/
 
 		if (a[k] == INF) cout << -1 << "\n";
@@ -75,5 +81,5 @@ namespace Sol {
 	}
 }
 int main() {
-	
+	Sol::sol();
 }

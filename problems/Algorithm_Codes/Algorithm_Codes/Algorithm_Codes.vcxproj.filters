@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Scripts\14939.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Scripts\10775.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Scripts\2294.cpp">
+    <ClCompile Include="Scripts\17837.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
